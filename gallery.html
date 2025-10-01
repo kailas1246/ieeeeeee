@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Gallery • IEEE SB-MCET</title>
+    <meta
+      name="description"
+      content="IEEE SB-MCET Gallery — events, workshops, chapters, and
+      campus moments."
+    />
+    <meta name="theme-color" content="#0f1020" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+       <!-- Fast logo preloader with progress -->
+<div class="loader-min" id="loader" aria-hidden="true">
+    <div class="loader-card logo-only lg"> 
+      <span class="logo-glow" aria-hidden="true"></span>
+  
+      <!-- Dark theme logo -->
+      <img
+        class="loader-logo dark"
+        src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+        alt="IEEE SB-MCET"
+        width="220"
+        height="56"
+      />
+      <!-- Light theme logo -->
+      <img
+        class="loader-logo light"
+        src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+        alt="IEEE SB-MCET"
+        width="220"
+        height="56"
+      />
+  
+      <div class="min-bar" aria-hidden="true">
+        <span class="min-fill" id="loaderFill" style="width: 0%"></span>
+      </div>
+      <div class="min-legend">
+        <span id="loaderPct">0%</span>
+      </div>
+    </div>
+  </div>
+    <!-- Progress bar -->
+    <div class="progress" id="progress"></div>
+
+    <!-- Utility bar -->
+    <div class="utility-bar">
+      <a href="#" aria-label="IEEE.org">IEEE.org</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Xplore">IEEE Xplore Digital Library</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Standards">IEEE Standards</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Spectrum">IEEE Spectrum Online</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="More IEEE Sites">More IEEE Sites</a>
+    </div>
+
+    <!-- Header -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="logo logo-left" aria-label="IEEE SB-MCET">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+            alt="IEEE SB-MCET logo (dark)"
+            width="220"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+            alt="IEEE SB-MCET logo (light)"
+            width="220"
+            height="56"
+          />
+        </a>
+
+        <nav class="menu">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="index.html#yearbook">Yearbook</a>
+          <a href="execom.html">ExeCom</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <a href="#" class="logo logo-right" aria-label="IEEE">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/ieee mb white png.png"
+            alt="MCET logo (dark)"
+            width="200"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/ieee mb black png.png"
+            alt="MCET logo (light)"
+            width="200"
+            height="56"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <canvas class="hero-canvas" id="space"></canvas>
+      <div class="hero-gradient" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div>
+          <div class="hero-badge" data-reveal>
+            <span class="dot"></span>
+            <span>Gallery</span>
+          </div>
+          <h1 class="title" id="heroTitle">
+            Moments that
+            <span class="gradient">Inspire & Build</span>
+          </h1>
+          <p class="subtitle">
+            A visual story of our events, workshops, chapters, and community
+            — captured across the years.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary magnetic" href="#albums">
+              Explore Albums
+              <span aria-hidden="true">⟶</span>
+              <span class="shine"></span>
+            </a>
+            <a class="btn btn-ghost magnetic" href="#highlights">
+              Highlights
+              <span class="shine"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card tilt" data-reveal>
+          <div class="shine"></div>
+          <h3 class="card-title">About the gallery</h3>
+          <p class="card-text">
+            Curated selections from hands-on sessions, chapter activities, and
+            flagship events — all in one place.
+          </p>
+          <div class="chips">
+            <span class="chip">Workshops</span>
+            <span class="chip">Chapters</span>
+            <span class="chip">Campus</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights (hero album) -->
+    <section id="highlights">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Year in Frames</h2>
+          <p class="section-sub">
+            A featured reel of our most memorable moments.
+          </p>
+        </div>
+
+        <div class="card media-card" data-reveal>
+          <div
+            class="media-img tilt"
+            style="background:
+              linear-gradient(135deg, rgba(var(--accent-2),.22),
+              rgba(var(--accent),.2)),
+              url('https://picsum.photos/seed/featuredreel/1200/800')
+              center/cover no-repeat;"
+          >
+            <div class="shine"></div>
+          </div>
+          <div class="media-body">
+            <h3 class="card-title">Highlights Reel — 2024–25</h3>
+            <p class="section-sub">
+              Workshops, talks, and campus-wide initiatives captured by our
+              volunteers and media team.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary magnetic" href="#albums">
+                View Albums
+                <span class="shine"></span>
+              </a>
+              <a class="btn btn-ghost magnetic" href="#campus">
+                Jump to Campus
+                <span class="shine"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Albums -->
+    <section id="albums">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Curated Collections</h2>
+          <p class="section-sub">
+            Browse themed sets — each a snapshot of learning and community.
+          </p>
+        </div>
+
+        <!-- Filters (static chips; style only) -->
+        <div class="chips" style="margin-bottom: 12px">
+          <a class="chip" href="#albums">All</a>
+          <a class="chip" href="#workshops">Workshops</a>
+          <a class="chip" href="#chapters">Chapters</a>
+          <a class="chip" href="#flagship">Flagship</a>
+          <a class="chip" href="#campus">Campus</a>
+        </div>
+
+        <!-- Flagship -->
+        <div class="section-head" id="flagship" style="margin-top: 12px">
+          <h3 class="section-title">Flagship Events</h3>
+          <a class="btn btn-ghost magnetic" href="#">
+            View More
+            <span class="shine"></span>
+          </a>
+        </div>
+        <div class="gallery-grid" data-reveal>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="GFX Workshop crowd shot"
+              src="https://picsum.photos/seed/gal-fl-1/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="GPT 101 session"
+              src="https://picsum.photos/seed/gal-fl-2/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="CommConnect networking"
+              src="https://picsum.photos/seed/gal-fl-3/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="BLS awareness demo"
+              src="https://picsum.photos/seed/gal-fl-4/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Esports scrims stage"
+              src="https://picsum.photos/seed/gal-fl-5/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Flagship keynote"
+              src="https://picsum.photos/seed/gal-fl-6/1200/800"
+            />
+          </a>
+        </div>
+
+        <!-- Workshops -->
+        <div class="section-head" id="workshops" style="margin-top: 24px">
+          <h3 class="section-title">Workshops & Labs</h3>
+          <a class="btn btn-ghost magnetic" href="#">
+            View More
+            <span class="shine"></span>
+          </a>
+        </div>
+        <div class="gallery-grid" data-reveal>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Embedded systems lab"
+              src="https://picsum.photos/seed/gal-ws-1/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Prompt engineering session"
+              src="https://picsum.photos/seed/gal-ws-2/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="DSP hands-on"
+              src="https://picsum.photos/seed/gal-ws-3/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Robotics build day"
+              src="https://picsum.photos/seed/gal-ws-4/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="PCB design basics"
+              src="https://picsum.photos/seed/gal-ws-5/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Team debugging session"
+              src="https://picsum.photos/seed/gal-ws-6/1200/800"
+            />
+          </a>
+        </div>
+
+        <!-- Chapters -->
+        <div class="section-head" id="chapters" style="margin-top: 24px">
+          <h3 class="section-title">Chapters & Societies</h3>
+          <a class="btn btn-ghost magnetic" href="#">
+            View More
+            <span class="shine"></span>
+          </a>
+        </div>
+        <div class="gallery-grid" data-reveal>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="WIE panel"
+              src="https://picsum.photos/seed/gal-ch-1/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="RAS workshop"
+              src="https://picsum.photos/seed/gal-ch-2/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="CS coding jam"
+              src="https://picsum.photos/seed/gal-ch-3/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="SPS demo"
+              src="https://picsum.photos/seed/gal-ch-4/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Mentorship circle"
+              src="https://picsum.photos/seed/gal-ch-5/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Chapter huddle"
+              src="https://picsum.photos/seed/gal-ch-6/1200/800"
+            />
+          </a>
+        </div>
+
+        <!-- Campus -->
+        <div class="section-head" id="campus" style="margin-top: 24px">
+          <h3 class="section-title">Campus & Community</h3>
+          <a class="btn btn-ghost magnetic" href="#">
+            View More
+            <span class="shine"></span>
+          </a>
+        </div>
+        <div class="gallery-grid" data-reveal>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Auditorium wide"
+              src="https://picsum.photos/seed/gal-ca-1/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Team photo"
+              src="https://picsum.photos/seed/gal-ca-2/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Volunteers at work"
+              src="https://picsum.photos/seed/gal-ca-3/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Event registration desk"
+              src="https://picsum.photos/seed/gal-ca-4/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Breakout discussion"
+              src="https://picsum.photos/seed/gal-ca-5/1200/800"
+            />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img
+              alt="Campus evening shot"
+              src="https://picsum.photos/seed/gal-ca-6/1200/800"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+        <img alt="Expanded gallery image" id="lightboxImg" />
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="container">
+        <div class="card media-card" data-reveal>
+          <div
+            class="media-img tilt"
+            style="background:
+              linear-gradient(135deg, rgba(var(--accent-3),.22),
+              rgba(var(--accent),.2)),
+              url('https://picsum.photos/seed/share-moments/1200/800')
+              center/cover no-repeat;"
+          >
+            <div class="shine"></div>
+          </div>
+          <div class="media-body">
+            <h3 class="card-title">Got photos to share?</h3>
+            <p class="section-sub">
+              Help us document our journey. Submit your best shots from events
+              and projects — get featured in the next update.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary magnetic" href="#">
+                Submit Photos
+                <span class="shine"></span>
+              </a>
+              <a class="btn btn-ghost magnetic" href="#highlights">
+                See Highlights
+                <span class="shine"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="credit">
+          © <span id="year"></span> IEEE SB-MCET. Made in-house by the
+          Developers of IEEE SB-MCET.
+        </div>
+        <div class="footer-links">
+          <a class="btn btn-ghost magnetic" href="index.html">Home</a>
+          <a class="btn btn-ghost magnetic" href="#albums">Albums</a>
+          <a class="btn btn-ghost magnetic" href="#workshops">Workshops</a>
+          <a class="btn btn-ghost magnetic" href="#campus">Campus</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom color switcher -->
+    <div
+      class="switcher"
+      id="switcher"
+      role="group"
+      aria-label="Color switcher"
+    >
+      <button class="swatch theme" id="switchTheme" title="Toggle theme">
+        🌗
+      </button>
+      <button class="swatch ocean" data-preset="ocean" title="Ocean"></button>
+      <button class="swatch violet" data-preset="violet" title="Violet"></button>
+      <button class="swatch sunset" data-preset="sunset" title="Sunset"></button>
+      <button class="swatch emerald" data-preset="emerald" title="Emerald">
+      </button>
+      <button class="swatch amber" data-preset="amber" title="Amber"></button>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

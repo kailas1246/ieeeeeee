@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Events • IEEE SB-MCET</title>
+    <meta
+      name="description"
+      content="Events at IEEE SB-MCET — featured, upcoming, and past events with workshops, talks, hackathons, and more."
+    />
+    <meta name="theme-color" content="#0f1020" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+       <!-- Fast logo preloader with progress -->
+<div class="loader-min" id="loader" aria-hidden="true">
+    <div class="loader-card logo-only lg"> 
+      <span class="logo-glow" aria-hidden="true"></span>
+  
+      <!-- Dark theme logo -->
+      <img
+        class="loader-logo dark"
+        src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+        alt="IEEE SB-MCET"
+        width="220"
+        height="56"
+      />
+      <!-- Light theme logo -->
+      <img
+        class="loader-logo light"
+        src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+        alt="IEEE SB-MCET"
+        width="220"
+        height="56"
+      />
+  
+      <div class="min-bar" aria-hidden="true">
+        <span class="min-fill" id="loaderFill" style="width: 0%"></span>
+      </div>
+      <div class="min-legend">
+        <span id="loaderPct">0%</span>
+      </div>
+    </div>
+  </div>
+    <!-- Progress bar -->
+    <div class="progress" id="progress"></div>
+
+    <!-- Utility bar -->
+    <div class="utility-bar">
+      <a href="#" aria-label="IEEE.org">IEEE.org</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Xplore">IEEE Xplore Digital Library</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Standards">IEEE Standards</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Spectrum">IEEE Spectrum Online</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="More IEEE Sites">More IEEE Sites</a>
+    </div>
+
+    <!-- Header -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <!-- Left logo -->
+        <a href="index.html" class="logo logo-left" aria-label="IEEE SB-MCET">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+            alt="IEEE SB-MCET logo (dark)"
+            width="220"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+            alt="IEEE SB-MCET logo (light)"
+            width="220"
+            height="56"
+          />
+        </a>
+
+        <nav class="menu">
+          <a href="about.html">About</a>
+          <a href="events.html" class="active">Events</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#yearbook">Yearbook</a>
+          <a href="execom.html">ExeCom</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Right logo -->
+        <a href="#" class="logo logo-right" aria-label="IEEE">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/ieee mb white png.png"
+            alt="IEEE MB logo (dark)"
+            width="200"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/ieee mb black png.png"
+            alt="IEEE MB logo (light)"
+            width="200"
+            height="56"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <canvas class="hero-canvas" id="space"></canvas>
+      <div class="hero-gradient" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div>
+          <div class="hero-badge" data-reveal>
+            <span class="dot"></span>
+            <span>Events & Workshops</span>
+          </div>
+          <h1 class="title" id="heroTitle">
+            Learn, build, and grow through
+            <span class="gradient">Events, Workshops & Talks</span>
+          </h1>
+          <p class="subtitle">
+            From beginner-friendly sessions to advanced deep-dives — explore our
+            upcoming and past programs crafted by the IEEE SB-MCET community.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary magnetic" href="#upcoming">
+              See Upcoming
+              <span aria-hidden="true">⟶</span>
+              <span class="shine"></span>
+            </a>
+            <a class="btn btn-ghost magnetic" href="#past">
+              Browse Past Events
+              <span class="shine"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card tilt" data-reveal>
+          <div class="shine"></div>
+          <h3 class="card-title">Why attend?</h3>
+          <p class="card-text">
+            Hands-on learning, real-world projects, and mentorship. Meet peers,
+            connect with experts, and build a portfolio that stands out.
+          </p>
+          <div class="chips">
+            <span class="chip">Workshops</span>
+            <span class="chip">Talks</span>
+            <span class="chip">Hackathons</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured carousel (reuses home carousel JS) -->
+    <section id="featured">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Featured Highlights</h2>
+          <p class="section-sub">
+            A snapshot of some of our most-loved sessions and series.
+          </p>
+        </div>
+
+        <div class="carousel" data-reveal>
+          <div class="arrows">
+            <button class="icon-btn" id="prevEvt" aria-label="Previous">
+              ◀
+            </button>
+            <button class="icon-btn" id="nextEvt" aria-label="Next">▶</button>
+          </div>
+          <div class="track" id="eventTrack">
+            <!-- Base cards (JS will clone for infinite loop) -->
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/feat-gfx/1200/800"
+                  alt="GFX Workshop"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">GFX Workshop</span>
+                <h4 class="card-title-sm">Motion & Visual Storytelling</h4>
+                <p class="section-sub">
+                  Learn design systems, motion basics, and narrative visuals.
+                </p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/feat-gpt/1200/800"
+                  alt="GPT 101"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">GPT 101</span>
+                <h4 class="card-title-sm">LLMs & Prompt Design</h4>
+                <p class="section-sub">
+                  Foundations of large language models and practical prompts.
+                </p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/feat-rise/1200/800"
+                  alt="RISE Series"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">RISE</span>
+                <h4 class="card-title-sm">Skill-Building Series</h4>
+                <p class="section-sub">
+                  Weekly micro-sessions to level up across domains.
+                </p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/feat-bls/1200/800"
+                  alt="BLS Awareness"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">BLS</span>
+                <h4 class="card-title-sm">Basic Life Support</h4>
+                <p class="section-sub">
+                  Awareness and response — essential first-responder skills.
+                </p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/feat-comm/1200/800"
+                  alt="CommConnect"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">CommConnect</span>
+                <h4 class="card-title-sm">Comms & Networking</h4>
+                <p class="section-sub">
+                  Signals to systems — practical comms for everyone.
+                </p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/feat-esports/1200/800"
+                  alt="Valorant Scrims"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">Valorant Scrims</span>
+                <h4 class="card-title-sm">Esports Night</h4>
+                <p class="section-sub">
+                  Team strategy, comms under pressure, and competition.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming -->
+    <section id="upcoming">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Upcoming Events</h2>
+          <p class="section-sub">
+            Get ready — register early to secure your seat.
+          </p>
+        </div>
+
+        <!-- Status cards (integrates with existing live/countdown JS) -->
+        <div class="card" data-reveal>
+          <!-- Live Now -->
+          <div class="live" id="liveNow" data-status="offline">
+            <div
+              class="thumb"
+              style="--img: url('https://picsum.photos/seed/live-now-evt/200/200')"
+            ></div>
+            <div class="live-meta">
+              <div class="live-top">
+                <span class="badge" id="liveNowBadge">Live</span>
+                <span class="live-name" id="liveNowName"
+                  >No live events now</span
+                >
+              </div>
+              <div class="live-sub" id="liveNowWhen">—</div>
+            </div>
+          </div>
+
+          <!-- Upcoming with countdown -->
+          <div class="live" id="upCard" data-status="upcoming">
+            <div
+              class="thumb"
+              style="--img: url('https://picsum.photos/seed/upcoming-evt/200/200')"
+            ></div>
+            <div class="live-meta">
+              <div class="live-top">
+                <span class="badge" id="upBadge">Upcoming</span>
+                <span class="live-name" id="upName">GFX Workshop</span>
+              </div>
+              <div class="live-sub" id="upWhen">In 2 days • 4:00 PM</div>
+            </div>
+            <div class="countdown" id="upCountdown">00:00:00</div>
+          </div>
+        </div>
+
+        <!-- Detailed upcoming list -->
+        <div class="split" style="margin-top: 16px">
+          <div class="card media-card tilt" data-reveal>
+            <div
+              class="media-img"
+              style="background:
+                linear-gradient(135deg, rgba(var(--accent-2),.22), rgba(var(--accent),.18)),
+                url('https://picsum.photos/seed/up1/1200/800') center/cover no-repeat;"
+            >
+              <div class="shine"></div>
+            </div>
+            <div class="media-body">
+              <h3 class="card-title">Intro to Embedded Systems</h3>
+              <p class="section-sub">
+                Tue, 19 Aug • 3:00–5:30 PM • ECE Lab 2 • Limited seats
+              </p>
+              <div class="chips">
+                <span class="chip">Embedded</span>
+                <span class="chip">Hands-on</span>
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary magnetic" href="#">
+                  Register
+                  <span class="shine"></span>
+                </a>
+                <a class="btn btn-ghost magnetic" href="#">
+                  Details
+                  <span class="shine"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card media-card tilt" data-reveal>
+            <div
+              class="media-img"
+              style="background:
+                linear-gradient(135deg, rgba(var(--accent-3),.22), rgba(var(--accent-2),.18)),
+                url('https://picsum.photos/seed/up2/1200/800') center/cover no-repeat;"
+            >
+              <div class="shine"></div>
+            </div>
+            <div class="media-body">
+              <h3 class="card-title">Prompting for Builders — GPT 101</h3>
+              <p class="section-sub">
+                Fri, 22 Aug • 4:00–6:00 PM • CS Seminar Hall • Open to all
+              </p>
+              <div class="chips">
+                <span class="chip">AI/ML</span>
+                <span class="chip">Beginner</span>
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary magnetic" href="#">
+                  Register
+                  <span class="shine"></span>
+                </a>
+                <a class="btn btn-ghost magnetic" href="#">
+                  Details
+                  <span class="shine"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card media-card tilt" data-reveal>
+            <div
+              class="media-img"
+              style="background:
+                linear-gradient(135deg, rgba(var(--accent),.22), rgba(var(--accent-3),.18)),
+                url('https://picsum.photos/seed/up3/1200/800') center/cover no-repeat;"
+            >
+              <div class="shine"></div>
+            </div>
+            <div class="media-body">
+              <h3 class="card-title">Signal Processing for Everyone</h3>
+              <p class="section-sub">
+                Mon, 25 Aug • 10:30 AM–12:30 PM • EC Block • Seats available
+              </p>
+              <div class="chips">
+                <span class="chip">DSP</span>
+                <span class="chip">Comms</span>
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary magnetic" href="#">
+                  Register
+                  <span class="shine"></span>
+                </a>
+                <a class="btn btn-ghost magnetic" href="#">
+                  Details
+                  <span class="shine"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card media-card tilt" data-reveal>
+            <div
+              class="media-img"
+              style="background:
+                linear-gradient(135deg, rgba(var(--accent-2),.22), rgba(var(--accent-3),.18)),
+                url('https://picsum.photos/seed/up4/1200/800') center/cover no-repeat;"
+            >
+              <div class="shine"></div>
+            </div>
+            <div class="media-body">
+              <h3 class="card-title">Women in Tech — Career Roundtable</h3>
+              <p class="section-sub">
+                Wed, 27 Aug • 2:00–4:00 PM • Main Auditorium • WIE special
+              </p>
+              <div class="chips">
+                <span class="chip">WIE</span>
+                <span class="chip">Mentorship</span>
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary magnetic" href="#">
+                  Register
+                  <span class="shine"></span>
+                </a>
+                <a class="btn btn-ghost magnetic" href="#">
+                  Details
+                  <span class="shine"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past -->
+    <section id="past">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Past Events</h2>
+          <p class="section-sub">
+            Explore what we’ve shipped — from campus-wide events to focused
+            workshops.
+          </p>
+        </div>
+
+        <!-- Simple filters (non-interactive chips for now) -->
+        <div class="chips" style="margin-bottom: 12px">
+          <a class="chip" href="#past">All</a>
+          <a class="chip" href="#past">Workshops</a>
+          <a class="chip" href="#past">Talks</a>
+          <a class="chip" href="#past">WIE</a>
+          <a class="chip" href="#past">AI/ML</a>
+          <a class="chip" href="#past">Comms</a>
+        </div>
+
+        <!-- Grid of past event cards (reuse event card style) -->
+        <div class="values-grid">
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past1/1200/800"
+                alt="Past Event 1"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">Workshop</span>
+              <h4 class="card-title-sm">Build a Line Follower Bot</h4>
+              <p class="section-sub">Mar 2025 • RAS • Hardware Sprint</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past2/1200/800"
+                alt="Past Event 2"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">Talk</span>
+              <h4 class="card-title-sm">Systems Design 101</h4>
+              <p class="section-sub">Feb 2025 • CS • Guest Lecture</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past3/1200/800"
+                alt="Past Event 3"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">WIE</span>
+              <h4 class="card-title-sm">Empower Her</h4>
+              <p class="section-sub">Jan 2025 • WIE • Panel & Mentoring</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past4/1200/800"
+                alt="Past Event 4"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">AI/ML</span>
+              <h4 class="card-title-sm">Vision with Transformers</h4>
+              <p class="section-sub">Dec 2024 • CS • Hands-on Lab</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past5/1200/800"
+                alt="Past Event 5"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">Comms</span>
+              <h4 class="card-title-sm">CommConnect</h4>
+              <p class="section-sub">Nov 2024 • SPS • Networking Basics</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past6/1200/800"
+                alt="Past Event 6"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">Series</span>
+              <h4 class="card-title-sm">RISE Skill Series</h4>
+              <p class="section-sub">Oct 2024 • Multi-week Series</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past7/1200/800"
+                alt="Past Event 7"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">Workshop</span>
+              <h4 class="card-title-sm">Intro to PCB Design</h4>
+              <p class="section-sub">Sep 2024 • RAS • KiCad Basics</p>
+            </div>
+          </article>
+
+          <article class="card event tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="media">
+              <img
+                src="https://picsum.photos/seed/past8/1200/800"
+                alt="Past Event 8"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="meta">
+              <span class="tag">Esports</span>
+              <h4 class="card-title-sm">Valorant Scrims</h4>
+              <p class="section-sub">Aug 2024 • Campus Esports Night</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="container">
+        <div class="card media-card" data-reveal>
+          <div
+            class="media-img tilt"
+            style="background:
+              linear-gradient(135deg, rgba(var(--accent-3),.22), rgba(var(--accent),.2)),
+              url('https://picsum.photos/seed/join-events/1200/800') center/cover no-repeat;"
+          >
+            <div class="shine"></div>
+          </div>
+          <div class="media-body">
+            <h3 class="card-title">Want to host a session?</h3>
+            <p class="section-sub">
+              Pitch a topic — we’ll help you design, schedule, and ship it to
+              the community.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary magnetic" href="index.html#contact">
+                Propose an Event
+                <span class="shine"></span>
+              </a>
+              <a class="btn btn-ghost magnetic" href="#featured">
+                See Highlights
+                <span class="shine"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="credit">
+          © <span id="year"></span> IEEE SB-MCET. Made in-house by the
+          Developers of IEEE SB-MCET.
+        </div>
+        <div class="footer-links">
+          <a class="btn btn-ghost magnetic" href="index.html">Home</a>
+          <a class="btn btn-ghost magnetic" href="#upcoming">Upcoming</a>
+          <a class="btn btn-ghost magnetic" href="#featured">Featured</a>
+          <a class="btn btn-ghost magnetic" href="#past">Past</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom color switcher -->
+    <div class="switcher" id="switcher" role="group" aria-label="Color switcher">
+      <button class="swatch theme" id="switchTheme" title="Toggle theme">🌗</button>
+      <button class="swatch ocean" data-preset="ocean" title="Ocean"></button>
+      <button class="swatch violet" data-preset="violet" title="Violet"></button>
+      <button class="swatch sunset" data-preset="sunset" title="Sunset"></button>
+      <button class="swatch emerald" data-preset="emerald" title="Emerald"></button>
+      <button class="swatch amber" data-preset="amber" title="Amber"></button>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

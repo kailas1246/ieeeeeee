@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>About • IEEE SB-MCET</title>
+    <meta
+      name="description"
+      content="About IEEE SB-MCET — vision, values, journey, chapters, and FAQs."
+    />
+    <meta name="theme-color" content="#0f1020" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+       <!-- Fast logo preloader with progress -->
+<div class="loader-min" id="loader" aria-hidden="true">
+    <div class="loader-card logo-only lg"> 
+      <span class="logo-glow" aria-hidden="true"></span>
+  
+      <!-- Dark theme logo -->
+      <img
+        class="loader-logo dark"
+        src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+        alt="IEEE SB-MCET"
+        width="220"
+        height="56"
+      />
+      <!-- Light theme logo -->
+      <img
+        class="loader-logo light"
+        src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+        alt="IEEE SB-MCET"
+        width="220"
+        height="56"
+      />
+  
+      <div class="min-bar" aria-hidden="true">
+        <span class="min-fill" id="loaderFill" style="width: 0%"></span>
+      </div>
+      <div class="min-legend">
+        <span id="loaderPct">0%</span>
+      </div>
+    </div>
+  </div>
+    <!-- Progress bar -->
+    <div class="progress" id="progress"></div>
+
+    <!-- Utility bar -->
+    <div class="utility-bar">
+      <a href="#" aria-label="IEEE.org">IEEE.org</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Xplore">IEEE Xplore Digital Library</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Standards">IEEE Standards</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Spectrum">IEEE Spectrum Online</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="More IEEE Sites">More IEEE Sites</a>
+    </div>
+
+    <!-- Header -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <!-- Left logo -->
+        <a href="index.html" class="logo logo-left" aria-label="IEEE SB-MCET">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+            alt="IEEE SB-MCET logo (dark)"
+            width="220"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+            alt="IEEE SB-MCET logo (light)"
+            width="220"
+            height="56"
+          />
+        </a>
+
+        <nav class="menu">
+          <a href="about.html" class="active">About</a>
+          <a href="events.html">Events</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#yearbook">Yearbook</a>
+          <a href="execom.html">ExeCom</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Right logo -->
+        <a href="#" class="logo logo-right" aria-label="IEEE">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/ieee mb white png.png"
+            alt="IEEE MB logo (dark)"
+            width="200"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/ieee mb black png.png"
+            alt="IEEE MB logo (light)"
+            width="200"
+            height="56"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <canvas class="hero-canvas" id="space"></canvas>
+      <div class="hero-gradient" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div>
+          <div class="hero-badge" data-reveal>
+            <span class="dot"></span>
+            <span>About IEEE SB-MCET</span>
+          </div>
+          <h1 class="title" id="heroTitle">
+            Discover the
+            <span class="gradient">Vision & Story</span>
+            behind SB‑MCET
+          </h1>
+          <p class="subtitle">
+            A student-led community advancing technology through innovation,
+            collaboration, and real-world learning.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary magnetic" href="#values">
+              Our Values
+              <span aria-hidden="true">⟶</span>
+              <span class="shine"></span>
+            </a>
+            <a class="btn btn-ghost magnetic" href="#history">
+              Our Journey
+              <span class="shine"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card tilt" data-reveal>
+          <div class="shine"></div>
+          <h3 class="card-title">Who we are</h3>
+          <p class="card-text">
+            We empower students to explore, build, and share technology.
+            Workshops, talks, hackathons, projects, and publications — all
+            designed to help you learn by doing.
+          </p>
+          <div class="chips">
+            <span class="chip">Innovation</span>
+            <span class="chip">Community</span>
+            <span class="chip">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section id="facts">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Quick Facts</h2>
+          <p class="section-sub">
+            A glance at our scale, impact, and momentum at MCET.
+          </p>
+        </div>
+        <div class="stats stagger">
+          <div class="card stat">
+            <div class="num" data-count="150">0</div>
+            <div class="label">Active Members</div>
+          </div>
+          <div class="card stat">
+            <div class="num" data-count="35">0</div>
+            <div class="label">Events This Year</div>
+          </div>
+          <div class="card stat">
+            <div class="num" data-count="12">0</div>
+            <div class="label">Workshops & Talks</div>
+          </div>
+          <div class="card stat">
+            <div class="num" data-count="8">0</div>
+            <div class="label">Project Teams</div>
+          </div>
+          <div class="card stat">
+            <div class="num" data-count="4">0</div>
+            <div class="label">Chapters & Societies</div>
+          </div>
+          <div class="card stat">
+            <div class="num" data-count="3">0</div>
+            <div class="label">Flagship Events</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section id="values">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">What We Stand For</h2>
+          <p class="section-sub">
+            Principles that guide our programs, communities, and the way we
+            build together.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="card value tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="value-icon">⚡</div>
+            <h3 class="value-title">Innovation</h3>
+            <p class="section-sub">
+              Build, prototype, iterate — explore cutting-edge technology through
+              hands-on practice.
+            </p>
+          </div>
+
+          <div class="card value tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="value-icon">🤝</div>
+            <h3 class="value-title">Collaboration</h3>
+            <p class="section-sub">
+              Multidisciplinary teams, peer learning, and mentorship are at our
+              core.
+            </p>
+          </div>
+
+          <div class="card value tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="value-icon">🧭</div>
+            <h3 class="value-title">Leadership</h3>
+            <p class="section-sub">
+              We lead by doing — running events, shipping projects, supporting
+              others to grow.
+            </p>
+          </div>
+
+          <div class="card value tilt" data-reveal>
+            <div class="shine"></div>
+            <div class="value-icon">🌍</div>
+            <h3 class="value-title">Impact</h3>
+            <p class="section-sub">
+              From campus to community — initiatives that create real outcomes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section id="history">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Our Journey</h2>
+          <p class="section-sub">Milestones that shaped SB‑MCET.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="titem" data-reveal>
+            <div class="tnode"></div>
+            <div class="tcard card tilt">
+              <div class="shine"></div>
+              <div class="tmeta"><span class="tbadge">2021</span></div>
+              <h3 class="tTitle">Rebooted Student Branch</h3>
+              <p class="section-sub">
+                Relaunched with a renewed vision, a core volunteer team, and a
+                focus on hands‑on learning.
+              </p>
+            </div>
+          </div>
+
+          <div class="titem" data-reveal>
+            <div class="tnode"></div>
+            <div class="tcard card tilt">
+              <div class="shine"></div>
+              <div class="tmeta"><span class="tbadge">2022</span></div>
+              <h3 class="tTitle">Chapters & Societies</h3>
+              <p class="section-sub">
+                Expanded with WIE and other societies enabling focused tracks in
+                AI, comms, and design.
+              </p>
+            </div>
+          </div>
+
+          <div class="titem" data-reveal>
+            <div class="tnode"></div>
+            <div class="tcard card tilt">
+              <div class="shine"></div>
+              <div class="tmeta"><span class="tbadge">2023</span></div>
+              <h3 class="tTitle">Flagship Events</h3>
+              <p class="section-sub">
+                College‑wide workshops and tech events — GFX, GPT 101, and more.
+              </p>
+            </div>
+          </div>
+
+          <div class="titem" data-reveal>
+            <div class="tnode"></div>
+            <div class="tcard card tilt">
+              <div class="shine"></div>
+              <div class="tmeta"><span class="tbadge">2024</span></div>
+              <h3 class="tTitle">Projects & Publications</h3>
+              <p class="section-sub">
+                Project teams formed around AI, comms, embedded, and design,
+                shipping open work and articles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chapters -->
+    <section id="chapters">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Chapters & Societies</h2>
+          <p class="section-sub">Explore specialized tracks and communities.</p>
+        </div>
+
+        <div class="chapters-grid">
+          <div class="card chapter tilt" data-reveal>
+            <div class="shine"></div>
+            <div
+              class="chapter-img"
+              style="--img: url('https://picsum.photos/seed/wie/800/600')"
+            ></div>
+            <h3 class="chapter-title">WIE — Women in Engineering</h3>
+            <p class="section-sub">
+              Inclusive space and opportunities for women in tech.
+            </p>
+            <div class="chips">
+              <span class="chip">Mentorship</span>
+              <span class="chip">Talks</span>
+            </div>
+          </div>
+
+          <div class="card chapter tilt" data-reveal>
+            <div class="shine"></div>
+            <div
+              class="chapter-img"
+              style="--img: url('https://picsum.photos/seed/ras/800/600')"
+            ></div>
+            <h3 class="chapter-title">RAS • Robotics & Automation</h3>
+            <p class="section-sub">
+              Hands‑on builds in robotics, control systems, and automation.
+            </p>
+            <div class="chips">
+              <span class="chip">Robotics</span>
+              <span class="chip">Embedded</span>
+            </div>
+          </div>
+
+          <div class="card chapter tilt" data-reveal>
+            <div class="shine"></div>
+            <div
+              class="chapter-img"
+              style="--img: url('https://picsum.photos/seed/cs/800/600')"
+            ></div>
+            <h3 class="chapter-title">CS • Computer Society</h3>
+            <p class="section-sub">
+              Algorithms, systems, open source — build with modern tools.
+            </p>
+            <div class="chips">
+              <span class="chip">AI/ML</span>
+              <span class="chip">Systems</span>
+            </div>
+          </div>
+
+          <div class="card chapter tilt" data-reveal>
+            <div class="shine"></div>
+            <div
+              class="chapter-img"
+              style="--img: url('https://picsum.photos/seed/sps/800/600')"
+            ></div>
+            <h3 class="chapter-title">SPS • Signal Processing</h3>
+            <p class="section-sub">
+              Comms, audio, vision — process and interpret real signals.
+            </p>
+            <div class="chips">
+              <span class="chip">DSP</span>
+              <span class="chip">Comms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section id="faqs">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">FAQs</h2>
+          <p class="section-sub">Answers to common questions.</p>
+        </div>
+
+        <div class="faq">
+          <div class="faq-item card" data-reveal>
+            <button class="faq-q" aria-expanded="false">
+              Who can join IEEE SB-MCET?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              Any MCET student passionate about technology — across years and
+              disciplines — is welcome.
+            </div>
+          </div>
+
+          <div class="faq-item card" data-reveal>
+            <button class="faq-q" aria-expanded="false">
+              Do I need prior experience?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              No. We have beginner‑friendly workshops, mentorship, and projects
+              to help you learn by doing.
+            </div>
+          </div>
+
+          <div class="faq-item card" data-reveal>
+            <button class="faq-q" aria-expanded="false">
+              How do I propose a session?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              Use the Contact section on the home page with your topic and
+              outline — we’ll help you host it.
+            </div>
+          </div>
+
+          <div class="faq-item card" data-reveal>
+            <button class="faq-q" aria-expanded="false">
+              How can I join a project team?
+              <span class="faq-toggle">+</span>
+            </button>
+            <div class="faq-a">
+              Watch for project calls on our channels — or pitch an idea and
+              we’ll help you form a team.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="container">
+        <div class="card media-card" data-reveal>
+          <div
+            class="media-img tilt"
+            style="background:
+              linear-gradient(135deg, rgba(var(--accent-3),.22), rgba(var(--accent),.2)),
+              url('https://picsum.photos/seed/join/1200/800') center/cover no-repeat;"
+          >
+            <div class="shine"></div>
+          </div>
+          <div class="media-body">
+            <h3 class="card-title">Ready to build with us?</h3>
+            <p class="section-sub">
+              Join the IEEE Student Branch at MCET and be part of a community
+              that ships ideas — not just slides.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary magnetic" href="index.html#contact">
+                Get Involved
+                <span class="shine"></span>
+              </a>
+              <a class="btn btn-ghost magnetic" href="index.html#events">
+                Explore Events
+                <span class="shine"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="credit">
+          © <span id="year"></span> IEEE SB-MCET. Made in-house by the
+          Developers of IEEE SB-MCET.
+        </div>
+        <div class="footer-links">
+          <a class="btn btn-ghost magnetic" href="index.html">Home</a>
+          <a class="btn btn-ghost magnetic" href="#values">Values</a>
+          <a class="btn btn-ghost magnetic" href="#history">Journey</a>
+          <a class="btn btn-ghost magnetic" href="#faqs">FAQs</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom color switcher (uses existing CSS/JS) -->
+    <div class="switcher" id="switcher" role="group" aria-label="Color switcher">
+      <button class="swatch theme" id="switchTheme" title="Toggle theme">🌗</button>
+      <button class="swatch ocean" data-preset="ocean" title="Ocean"></button>
+      <button class="swatch violet" data-preset="violet" title="Violet"></button>
+      <button class="swatch sunset" data-preset="sunset" title="Sunset"></button>
+      <button class="swatch emerald" data-preset="emerald" title="Emerald"></button>
+      <button class="swatch amber" data-preset="amber" title="Amber"></button>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>IEEE SB-MCET</title>
+    <meta
+      name="description"
+      content="IEEE Student Branch at MCET — Promoting technological innovation and excellence. Events, Gallery, Yearbook, Team, and more."
+    />
+    <meta name="theme-color" content="#0f1020" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+   <!-- Fast logo preloader with progress -->
+<div class="loader-min" id="loader" aria-hidden="true">
+  <div class="loader-card logo-only lg"> 
+    <span class="logo-glow" aria-hidden="true"></span>
+
+    <!-- Dark theme logo -->  
+    <img
+      class="loader-logo dark"
+      src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+      alt="IEEE SB-MCET"
+      width="220"
+      height="56"
+    />
+    <!-- Light theme logo -->
+    <img
+      class="loader-logo light"
+      src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+      alt="IEEE SB-MCET"
+      width="220"
+      height="56"
+    />
+
+    <div class="min-bar" aria-hidden="true">
+      <span class="min-fill" id="loaderFill" style="width: 0%"></span>
+    </div>
+    <div class="min-legend">
+      <span id="loaderPct">0%</span>
+    </div>
+  </div>
+</div>
+    <!-- Progress bar -->
+    <div class="progress" id="progress"></div>
+
+    <!-- Utility bar -->
+    <div class="utility-bar">
+      <a href="#" aria-label="IEEE.org">IEEE.org</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Xplore">IEEE Xplore Digital Library</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Standards">IEEE Standards</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="IEEE Spectrum">IEEE Spectrum Online</a>
+      <span class="utility-dot"></span>
+      <a href="#" aria-label="More IEEE Sites">More IEEE Sites</a>
+    </div>
+
+    <!-- Header -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <!-- Left logo -->
+        <a href="#" class="logo logo-left" aria-label="IEEE SB-MCET">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo White.png"
+            alt="IEEE SB-MCET logo (dark)"
+            width="220"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/IEEE SB MCET LOGOS/SB Logo Black.png"
+            alt="IEEE SB-MCET logo (light)"
+            width="220"
+            height="56"
+          />
+        </a>
+
+        <nav class="menu">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="index.html#yearbook">Yearbook</a>
+          <a href="execom.html">ExeCom</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Right logo -->
+        <a href="#" class="logo logo-right" aria-label="IEEE">
+          <img
+            class="logo-img dark"
+            src="./IEEE Logos/ieee mb white png.png"
+            alt="IEEE MB logo (dark)"
+            width="200"
+            height="56"
+          />
+          <img
+            class="logo-img light"
+            src="./IEEE Logos/ieee mb black png.png"
+            alt="IEEE MB logo (light)"
+            width="200"
+            height="56"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <canvas class="hero-canvas" id="space"></canvas>
+      <div class="hero-gradient" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div>
+          <div class="hero-badge" data-reveal>
+            <span class="dot"></span>
+            <span>Empowering Innovation and Excellence</span>
+          </div>
+          <h1 class="title" id="heroTitle">
+            Welcome to the
+            <span class="gradient">IEEE Student Branch</span>
+            of MCET
+          </h1>
+          <p class="subtitle">
+            We foster technological growth through hands-on learning, leadership,
+            and collaboration. Dive into our events, projects, and a community
+            built to help you excel.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary magnetic" href="#events">
+              Explore Events
+              <span aria-hidden="true">⟶</span>
+              <span class="shine"></span>
+            </a>
+            <a class="btn btn-ghost magnetic" href="#about">
+              About IEEE SB-MCET
+              <span class="shine"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="card tilt" data-reveal>
+          <div class="shine"></div>
+          <h3 class="card-title">What we do</h3>
+          <p class="card-text">
+            The IEEE Student Branch at MCET is dedicated to promoting
+            technological innovation and excellence. Our mission is to engage
+            students in meaningful activities, competitions, and projects to
+            enhance their learning experience.
+          </p>
+          <div class="chips">
+            <span class="chip">Innovation</span>
+            <span class="chip">Leadership</span>
+            <span class="chip">Teamwork</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="mouse"></div>
+        SCROLL
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">About IEEE SB-MCET</h2>
+          <p class="section-sub">
+            We provide opportunities for students to develop technical skills,
+            leadership, and teamwork through workshops, competitions, and real
+            projects.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="card" data-reveal>
+            <span class="pill">Our Mission</span>
+            <ul class="about-list">
+              <li class="about-item">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="rgba(90,255,180,0.9)"
+                  stroke-width="2"
+                >
+                  <path d="M12 2l7 4v6c0 5-7 10-7 10S5 17 5 12V6l7-4z" />
+                </svg>
+                <div>
+                  Engage students in meaningful activities and projects to
+                  enhance their learning.
+                </div>
+              </li>
+              <li class="about-item">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="rgba(78,141,255,0.95)"
+                  stroke-width="2"
+                >
+                  <path d="M12 2v20M2 12h20" />
+                </svg>
+                <div>
+                  Promote leadership and teamwork through events and
+                  competitions.
+                </div>
+              </li>
+              <li class="about-item">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="rgba(255,101,132,0.95)"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 3" />
+                </svg>
+                <div>Build technical prowess with hands-on workshops.</div>
+              </li>
+            </ul>
+
+            <div class="stats stagger">
+              <div class="stat">
+                <div class="num" data-count="150">0</div>
+                <div class="label">Active Members</div>
+              </div>
+              <div class="stat">
+                <div class="num" data-count="35">0</div>
+                <div class="label">Events This Year</div>
+              </div>
+              <div class="stat">
+                <div class="num" data-count="12">0</div>
+                <div class="label">Workshops & Talks</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card tilt" data-reveal>
+            <div class="shine"></div>
+            <h3 class="card-title">Quick Links</h3>
+            <div class="chips">
+              <a class="chip" href="#events">Events</a>
+              <a class="chip" href="#gallery">Gallery</a>
+              <a class="chip" href="#yearbook">Yearbook</a>
+              <a class="chip" href="#team">ExeCom</a>
+              <a class="chip" href="#contact">Contact</a>
+            </div>
+
+            <!-- Live Now -->
+            <div class="live" id="liveNow" data-status="offline">
+              <div
+                class="thumb"
+                style="--img: url('https://picsum.photos/seed/live-now/200/200')"
+              ></div>
+              <div class="live-meta">
+                <div class="live-top">
+                  <span class="badge" id="liveNowBadge">Live</span>
+                  <span class="live-name" id="liveNowName"
+                    >No live events now</span
+                  >
+                </div>
+                <div class="live-sub" id="liveNowWhen">—</div>
+              </div>
+            </div>
+
+            <!-- Upcoming with countdown -->
+            <div class="live" id="upCard" data-status="upcoming">
+              <div
+                class="thumb"
+                style="--img: url('https://picsum.photos/seed/upcoming/200/200')"
+              ></div>
+              <div class="live-meta">
+                <div class="live-top">
+                  <span class="badge" id="upBadge">Upcoming</span>
+                  <span class="live-name" id="upName">GFX Workshop</span>
+                </div>
+                <div class="live-sub" id="upWhen">In 2 days • 4:00 PM</div>
+              </div>
+              <div class="countdown" id="upCountdown">00:00:00</div>
+            </div>
+
+            <p class="section-sub made-in">Made in-house by IEEE SB-MCET.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Our Latest Events</h2>
+        </div>
+
+        <div class="carousel" data-reveal>
+          <div class="arrows">
+            <button class="icon-btn" id="prevEvt" aria-label="Previous">
+              ◀
+            </button>
+            <button class="icon-btn" id="nextEvt" aria-label="Next">▶</button>
+          </div>
+          <div class="track" id="eventTrack">
+            <!-- Base set of event cards (will be triplicated in JS) -->
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img src="https://picsum.photos/seed/bls/1200/800" alt="BLS" />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">BLS</span>
+                <h4 class="card-title-sm">BLS</h4>
+                <p class="section-sub">Basic Life Support awareness session.</p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img src="https://picsum.photos/seed/rise/1200/800" alt="RISE" />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">RISE</span>
+                <h4 class="card-title-sm">RISE</h4>
+                <p class="section-sub">Skill-building series.</p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img src="https://picsum.photos/seed/gfx/1200/800" alt="GFX" />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">GFX Workshop</span>
+                <h4 class="card-title-sm">GFX Workshop</h4>
+                <p class="section-sub">Motion and visual storytelling.</p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/gpt101/1200/800"
+                  alt="GPT 101"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">GPT 101</span>
+                <h4 class="card-title-sm">GPT 101</h4>
+                <p class="section-sub">Intro to LLMs and prompt design.</p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/empowerher/1200/800"
+                  alt="Empower Her"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">Empower Her</span>
+                <h4 class="card-title-sm">Empower Her</h4>
+                <p class="section-sub">WIE initiatives.</p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/commconnect/1200/800"
+                  alt="CommConnect"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">CommConnect</span>
+                <h4 class="card-title-sm">CommConnect</h4>
+                <p class="section-sub">Comms and networking.</p>
+              </div>
+            </article>
+
+            <article class="card event tilt evt">
+              <div class="shine"></div>
+              <div class="media">
+                <img
+                  src="https://picsum.photos/seed/valorant/1200/800"
+                  alt="Valorant Scrims"
+                />
+                <div class="overlay"></div>
+              </div>
+              <div class="meta">
+                <span class="tag">Valorant Scrims</span>
+                <h4 class="card-title-sm">Valorant Scrims</h4>
+                <p class="section-sub">Esports scrimmage event.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Gallery</h2>
+          <a class="btn btn-ghost magnetic" href="#">
+            View More
+            <span class="shine"></span>
+          </a>
+        </div>
+        <!-- Exactly 3 x 2 grid -->
+        <div class="gallery-grid" data-reveal>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img alt="Gallery 1" src="https://picsum.photos/seed/g1/1200/800" />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img alt="Gallery 2" src="https://picsum.photos/seed/g2/1200/800" />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img alt="Gallery 3" src="https://picsum.photos/seed/g3/1200/800" />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img alt="Gallery 4" src="https://picsum.photos/seed/g4/1200/800" />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img alt="Gallery 5" src="https://picsum.photos/seed/g5/1200/800" />
+          </a>
+          <a class="tile tilt">
+            <div class="shine"></div>
+            <img alt="Gallery 6" src="https://picsum.photos/seed/g6/1200/800" />
+          </a>
+        </div>
+      </div>
+      <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+        <img alt="Expanded gallery image" id="lightboxImg" />
+      </div>
+    </section>
+
+    <!-- Yearbook / Updates -->
+    <section id="yearbook">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Yearbook & Updates</h2>
+          <p class="section-sub">
+            Browse the 2023-24 yearbook and our monthly MCET Update.
+          </p>
+        </div>
+
+        <div class="split">
+          <!-- Yearbook card -->
+          <div class="card media-card" data-reveal>
+            <div class="media-img yearbook-img tilt">
+              <div class="shine"></div>
+            </div>
+            <div class="media-body">
+              <h3 class="card-title">Yearbook 2023–24</h3>
+              <p class="section-sub">
+                Highlights, achievements, and memories from the IEEE SB-MCET
+                year.
+              </p>
+              <div class="hero-cta">
+                <a class="btn btn-primary magnetic" href="#" download>
+                  Download
+                  <span class="shine"></span>
+                </a>
+                <a class="btn btn-ghost magnetic" href="#">
+                  Preview
+                  <span class="shine"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Updates card -->
+          <div class="card media-card" data-reveal>
+            <div class="media-img updates-img tilt">
+              <div class="shine"></div>
+            </div>
+            <div class="media-body">
+              <h3 class="card-title">MCET Update • Vol. 037</h3>
+              <p class="section-sub">
+                Monthly roundup of events, projects, and community wins.
+              </p>
+              <div class="hero-cta">
+                <a class="btn btn-primary magnetic" href="#">
+                  View All Volumes
+                  <span class="shine"></span>
+                </a>
+                <a class="btn btn-ghost magnetic" href="#">
+                  Explore Archives
+                  <span class="shine"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Meet Our Team (ExeCom)</h2>
+          <a class="btn btn-ghost magnetic" href="#">View Full ExeCom</a>
+        </div>
+        <div class="team" data-reveal>
+          <div class="card member tilt">
+            <div
+              class="avatar"
+              style="--img: url('https://picsum.photos/seed/member1/300/300')"
+            ></div>
+            <div>
+              <h4>Vijayalekshmi SV</h4>
+              <div class="role">Student Branch Counsellor</div>
+            </div>
+            <div class="shine"></div>
+          </div>
+
+          <div class="card member tilt">
+            <div
+              class="avatar"
+              style="--img: url('https://picsum.photos/seed/member2/300/300')"
+            ></div>
+            <div>
+              <h4>Biju G R</h4>
+              <div class="role">Student Branch Counsellor</div>
+            </div>
+            <div class="shine"></div>
+          </div>
+
+          <div class="card member tilt">
+            <div
+              class="avatar"
+              style="--img: url('https://picsum.photos/seed/member3/300/300')"
+            ></div>
+            <div>
+              <h4>Sameen Sardar S</h4>
+              <div class="role">Chairperson</div>
+            </div>
+            <div class="shine"></div>
+          </div>
+
+          <div class="card member tilt">
+            <div
+              class="avatar"
+              style="--img: url('https://picsum.photos/seed/member4/300/300')"
+            ></div>
+            <div>
+              <h4>Prasanth Somakumar Nair</h4>
+              <div class="role">Vice-Chair & LINK Rep.</div>
+            </div>
+            <div class="shine"></div>
+          </div>
+
+          <div class="card member tilt">
+            <div
+              class="avatar"
+              style="--img: url('https://picsum.photos/seed/member5/300/300')"
+            ></div>
+            <div>
+              <h4>Varun Vinod</h4>
+              <div class="role">Secretary & Editor</div>
+            </div>
+            <div class="shine"></div>
+          </div>
+
+          <div class="card member tilt">
+            <div
+              class="avatar"
+              style="--img: url('https://picsum.photos/seed/member6/300/300')"
+            ></div>
+            <div>
+              <h4>Arathy G</h4>
+              <div class="role">Treasurer & WIE Rep.</div>
+            </div>
+            <div class="shine"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-sub">
+            IEEE SB-MCET — Empowering students to innovate and excel in
+            technology. Join us to explore new horizons and stay at the
+            forefront of innovation.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="map tilt" data-reveal>
+            <div class="shine"></div>
+          </div>
+
+          <form class="card form" data-reveal onsubmit="return false;">
+            <div class="input">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" placeholder="John Doe" />
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@mcet.edu"
+              />
+            </div>
+            <div class="input">
+              <label for="msg">Message</label>
+              <textarea
+                id="msg"
+                name="message"
+                placeholder="Tell us how you'd like to get involved..."
+              ></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary magnetic" type="submit">
+                Send Message
+                <span class="shine"></span>
+              </button>
+              <a class="btn btn-ghost magnetic" href="mailto:info@mcet.edu">
+                Email Us
+                <span class="shine"></span>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div class="credit">
+          © <span id="year"></span> IEEE SB-MCET. Made in-house by the
+          Developers of IEEE SB-MCET.
+        </div>
+        <div class="footer-links">
+          <a class="btn btn-ghost magnetic" href="#">Home</a>
+          <a class="btn btn-ghost magnetic" href="#about">About</a>
+          <a class="btn btn-ghost magnetic" href="#events">Events</a>
+          <a class="btn btn-ghost magnetic" href="#gallery">Gallery</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom color switcher -->
+    <div class="switcher" id="switcher" role="group" aria-label="Color switcher">
+      <button class="swatch theme" id="switchTheme" title="Toggle theme">🌗</button>
+      <button class="swatch ocean" data-preset="ocean" title="Ocean"></button>
+      <button class="swatch violet" data-preset="violet" title="Violet"></button>
+      <button class="swatch sunset" data-preset="sunset" title="Sunset"></button>
+      <button class="swatch emerald" data-preset="emerald" title="Emerald"></button>
+      <button class="swatch amber" data-preset="amber" title="Amber"></button>
+    </div>
+
+    <!-- Custom cursor (hidden on touch devices) -->
+    <div class="cursor" id="cursor"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
